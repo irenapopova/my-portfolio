@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Irena Popova | Front-End Web Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Damion|Patua+One|Varela+Round">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="./style.css">
+
+</head>
+
+<!--   MAIN  BODY SECTION -->
+<body>
+<!-- HEADER SECTION -->
+  <div class="pageWrapper">
+    <header class="header">
+
+      <div class="header__inner">
+        <h1 class="brand"><a href="/" title="Return to the top" class="brand__link">irenapopova</a></h1>
+        <a id="hamburger" href="#navbar" class="menu-toggle-button">
+          <svg class="menu-toggle-svg" viewbox="0 0 48 48">
+            <title>Menu</title>
+            <rect x="15.5" y="16.5" width="20" height="3" />
+            <rect x="15.5" y="23.5" width="20" height="3" />
+            <rect x="15.5" y="30.5" width="20" height="3" />
+          </svg>
+        </a>
+
+        <!-- NAVIGATION  SECTION -->
+
+        <nav class="nav" id="navbar">
+          <h2 class="nav__title">Primary Navigation:</h2>
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#welcome-section" title="Get to know irenapopova" class="nav-link">About Me</a></li>
+            <li class="nav-item"><a href="#projects" title="Projects irenapopova has worked on" class="nav-link">Projects</a></li>
+            <li class="nav-item"><a href="#experience" title="Web development experience" class="nav-link">Experience</a></li>
+           <li a href="assets/cv.pdf" target="_blank" class="hvr-sweep-to-bottom"><i class="fa fa-download" aria-hidden="true"></i><span>Download CV</span></a> </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="section about" id="welcome-section">
+        <div class="section__inner">
+          <article class="whoami">
+            <div class="whoami__image-wrapper">
+              <img class="whoami__image" src="./images/irena_cut2.jpg" alt="Picture of irenapopova">
+            </div>
+            <div class="whoami__body">
+              <h1 class="whoami__title">whoami</h1>
+              <p class="whoami__description">Hello. My name is Irena, I have successfully transferred my passion for foreign languages 
+                to programming ones. For more info 
+                <a href="https://github.com/irenapopova" target="_blank">irenapopova</a>.I am a Full Stack Developer. Web development isn't just <em>what I do</em>,
+                it's a significant part of <em>who I am</em> and is one of the key things in my life that I truly love to do and am passionate about.</p>
+              <p class="whoami__fun-fact"><em>Interest</em>: My current focus is on boosting my React knowledge and to finish the Web 
+                Development course at
+                <a href="https://grow.google/programs/udacity/" target="_blank">Udacity</a> My main professional goal is to find a job that will give me an opportunity to 
+                deepen and improve previously acquired programming skills and to engage in interesting and creative projects. 
+                </p>
+
+              <ul class="social-buttons">
+                <li class="social-button"><a href="https://github.com/irenapopova" title="Contact irenapopova on Github"
+                    id="profile-link" class="github" target="_blank"><span aria-hidden="true">Github</span></a></li>
+
+                <li class="social-button"><a href="https://www.freecodecamp.org/irena-popova" title="Contact irenapopova on freeCodeCamp"
+                    class="freeCodeCamp" target="_blank"><span aria-hidden="true">DCI</span></a></li>
+                
+                <li class="social-button"><a href="https://www.linkedin.com/in/irena-popova-699bb413b/" title="Contact irenapopova on LinkedIn"
+                    class="linkedin" target="_blank"><span aria-hidden="true">LinkedIn</span></a></li>
+
+                
+                <li class="social-button"><a href="https://twitter.com/irenejpopova" title="Contact irenapopova on Twitter"
+                    class="twitter" target="_blank"><span aria-hidden="true">Twitter</span></a></li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+<!-- PROJECTS SECTION -->
+
+      <section class="section" id="projects">
+        <article class="featured-project">
+          <div class="section__inner">
+            <figure class="featured-project__image-wrapper">
+              <img src="./images/restaurant.jpg" alt="Project Name" class="featured-project__image">
+              <figcaption class="featured-project__section-header">
+                <h2 class="featured-project__section-title">Featured Project</h2>
+              </figcaption>
+            </figure>
+            <header class="featured-project__header">
+              <h3 class="featured-project__title">Restaurant Project</h3>
+              <ul class="featured-project__tech-list" aria-describedby="tech-list-title">
+                <li class="tech-list__title">
+                  <h4 id="tech-list-title" aria-hidden="true">Technology utilized for the Restaurant  project:</h4>
+                </li>
+                <li class="tech-list__item html5">HTML5</li>
+                <li class="tech-list__item css3">CSS3</li>
+                <li class="tech-list__item sass">SASS</li>
+                <li class="tech-list__item js">Javascript</li>
+                <li class="tech-list__item node">Node JS</li>
+                <li class="tech-list__item webpack">Webpack</li>
+                <li class="tech-list__item gulp">Gulp</li>
+                <li class="tech-list__item git">Git</li>
+              </ul>
+              <ul class="featured-project__links">
+                <li class="featured-project__link"><a href="https://irenapopova.github.io/Restaurant-Project/" 
+                  class="demo-link"
+                    title="View the Restuarant Reviews application demo" target="_blank">Demo</a></li>
+                <li class="featured-project__link"><a   href="https://github.com/irenapopova/Restaurant-Project"
+                    class="source-link" title="View the Restaurant Reviews application source code" target="_blank">Source</a></li>
+              </ul>
+            </header>
+            <p class="featured-project__description">
+              <span class="featured-project__date" aria-label="Project completion date">June 2020</span>
+              The Restaurant Project is a single page application which I created as a project for a friend. The project is still  <em>in progress</em>
+              The application was written using 
+              JavaScript. 
+            </p>
+            <ul class="featured-project__feature-list" aria-describedby="feature-list-title">
+              <li class="feature-list__title">
+                <h4 id="feature-list-title" aria-hidden="true">Restaurant project features:</h4>
+              </li>
+              <li class="feature-list__item">Responsive Design</li>
+              <li class="feature-list__item">Progressive Web Application</li>
+              <li class="feature-list__item">Enabled</li>
+              <li class="feature-list__item">Adheres to Accessibility Standards</li>
+            </ul>
+          </div>
+        </article>
+
+<!-- OTHER PROJECTS SECTION -->
+
+        <article class="projects">
+          <div class="section__inner">
+            <h2 class="projects__title">Other Projects:</h2>
+            <ul class="project-list">
+              <li class="project-tile">
+                <a href="https://irenapopova.github.io/Photography/" title="Photography Project">
+                  <img class="project__image" src="./images/iliana.jpg" alt="Photography webpage">
+                  <div class="project__info">
+                    <h3 class="project__name">Photography (work in progress)</h3>
+                    <ul class="tech">
+                      <li class="tech-item--title">Tech:</li>
+                      <li class="tech-item html5">HTML5</li>
+                      <li class="tech-item css3">CSS3</li>
+                      <li class="tech-item js">Javascript</li>
+                    </ul>
+                    <p class="project__description">Private project build for my cousin.</p>
+                  </div>
+                </a>
+              </li>
+
+              
+
+              <li class="project-tile">
+                <a href="#" title="Quote Machine">
+                  <img class="project__image" src="./images/agency.jpg" alt="Agency">
+                  <div class="project__info">
+                    <h3 class="project__name">Agency ( work in progress)</h3>
+                    <ul class="tech">
+                      <li class="tech-item--title">Tech:</li>
+                      <li class="tech-item html5">HTML5</li>
+                      <li class="tech-item css3">CSS3</li>
+                      <li class="tech-item sass">SASS</li>
+                      <li class="tech-item js">Javascript</li>
+                      <li class="tech-item babel">Babel</li>
+                      <li class="tech-item react">React</li>
+                    </ul>
+                    <p class="project__description">A Demo webpage for Design Agency.</p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="project-tile">
+                <a href="https://irenapopova.github.io/Bakery-Website/" title="Product Landing Page" target="_blank">
+                  <img class="project__image" src="./images/bakery.jpg" alt="Sample Product Landing Page with responsive design">
+                  <div class="project__info">
+                    <h3 class="project__name">Product Landing Page</h3>
+                    <ul class="tech">
+                      <li class="tech-item--title">Tech:</li>
+                      <li class="tech-item html5">HTML5</li>
+                      <li class="tech-item css3">CSS3</li>
+                    </ul>
+                    <p class="project__description">Product landing page. The project is build during the program at DCI, Berlin.</p>
+                  </div>
+                </a>
+              </li>
+
+              
+
+              
+
+              <li class="project-tile">
+                <a href="#" title="Outdoors" target="_blank">
+                  <img class="project__image" src="./images/naturno.jpg" alt="Outdoors">
+                  <div class="project__info">
+                    <h3 class="project__name">Nokturno</h3>
+                    <ul class="tech">
+                      <li class="tech-item--title">Tech:</li>
+                      <li class="tech-item html5">HTML5</li>
+                      <li class="tech-item css3">CSS3</li>
+                      <li class="tech-item js">Javascript</li>
+                    </ul>
+                    <p class="project__description">Web application for outdoor activities and trips. The project is part of the training curriculum at DCI,Berlin. ( work in progress)</p>
+                  </div>
+                </a>
+              </li>
+
+               <li class="project-tile">
+                <a href="https://irenapopova.github.io/halloween-page/" title="Halloween Page" target="_blank">
+                  <img class="project__image" src="./images/halloween.jpg" alt="Halloween">
+                  <div class="project__info">
+                    <h3 class="project__name">Halloween</h3>
+                    <ul class="tech">
+                      <li class="tech-item--title">Tech:</li>
+                      <li class="tech-item html5">HTML5</li>
+                      <li class="tech-item css3">CSS3</li>
+                      <li class="tech-item js">Javascript</li>
+                    </ul>
+                    <p class="project__description">A landing page build as part of the training curriculum at DCI, Berlin.
+                      (work in progress)</p>
+                  </div>
+                </a>
+              </li>
+              
+              <!--
+               <li class="project-tile">
+                <a href="#" title="React Documentation Page" target="_blank">
+                  <img class="project__image" src="./images/bubbles.jpg" alt="Bubble pop game">
+                  <div class="project__info">
+                    <h3 class="project__name">React Documentation Page</h3>
+                    <ul class="tech">
+                      <li class="tech-item--title">Tech:</li>
+                      <li class="tech-item html5">HTML5</li>
+                      <li class="tech-item css3">CSS3</li>
+                      <li class="tech-item js">Javascript</li>
+                    </ul>
+                    <p class="project__description">React Documentation Page (work in progress)</p>
+                  </div>
+                </a>
+              </li>
+              
+            -->
+
+               <li class="project-tile">
+                <a href="https://irenapopova.github.io/greet-card/" title="Loudspeakers Production" target="_blank">
+                  <img class="project__image" src="./images/thankscard.jpg" alt="Greeting Card">
+                  <div class="project__info">
+                    <h3 class="project__name">Greeting Card</h3>
+                    <ul class="tech">
+                      <li class="tech-item--title">Tech:</li>
+                      <li class="tech-item html5">HTML5</li>
+                      <li class="tech-item css3">CSS3</li>
+                      <li class="tech-item js">Javascript</li>
+                    </ul>
+                    <p class="project__description">Project part of the program in DCI (Digital Career Institute, Berlin</p>
+                  </div>
+                </a>
+              </li>
+              
+            </ul>
+          </div>
+        </article>
+
+        <article class="experience" id="experience">
+
+          <div class="section__inner">
+            <h2 class="experience__title">Experience With:</h2>
+            <ul class="experience-list">
+              <li class="html5">HTML5</li>
+              <li class="css3">CSS3</li>
+              <li class="sass">SASS</li>
+              <li class="js">Javascript</li>
+              <li class="jquery">jQuery</li>
+              <li class="react">React</li>
+             <!-- <li class="angular">Angular</li> -->
+              <li class="node">Node JS</li>
+              <li class="express">Express</li>
+              <li class="mysql">MySQL</li>
+              <li class="postgres">PostgreSQL</li>
+              <li class="mongodb">MongoDB</li>
+              <li class="webpack">Webpack</li>
+              <li class="grunt">Grunt</li>
+              <li class="gulp">Gulp</li>
+              <li class="git">Git</li>
+            </ul>
+
+          </div>
+        </article>
+
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__text">Made with <span class="heart">♥</span> by irenapopova</p>
+    </footer>
+  </div>
+
+  <script src="./app.js"></script>
+
+</body>
+
+</html>
