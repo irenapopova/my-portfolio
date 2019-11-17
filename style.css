@@ -252,6 +252,7 @@ a:active {
   font-size: 3.6rem;
   padding: 0.5rem 1rem;
   padding-top: 0;
+  color: white;
 
 }
 
@@ -286,8 +287,13 @@ a:active {
   /* flex: 1; */
   padding: 0 1rem;
   max-width: 60rem;
-  background-color: rgba(100, 100, 100, 0.2);
+  background-color: rgba(0, 0, 0, 0.276);
   border-radius: 2rem;
+  color: white;
+}
+.whoami__body a{
+  color: rgb(164, 27, 6);
+  font-weight: bold;
 }
 .whoami__description {
   margin: 0;
@@ -629,6 +635,11 @@ a:active {
   display: flex;
   flex-flow: row wrap;
   text-align: center;
+}
+
+.cv-li a{
+  color: white;
+  margin-right: 3rem;
 }
 
 .experience-list li {
