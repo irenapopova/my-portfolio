@@ -317,6 +317,7 @@ animation-direction: forwards;
   padding: 0.5rem 1rem;
   padding-top: 0;
   color: white;
+  font-weight: bold;
 
 }
 
@@ -721,7 +722,7 @@ animation-direction: forwards;
   color: #f7f7f7;
   text-align: center;
   text-shadow: 0 0 0.85rem #000;
-  
+
 }
 
 .heart {
@@ -788,7 +789,7 @@ animation-direction: forwards;
 @media screen and (min-width: 960px) {
   .featured-project .section__inner {
     display: grid;
-    grid-gap: 1rem;
+    grid-gap: 2rem;
     grid-template:
       'image header'
       'image header'
@@ -830,6 +831,7 @@ animation-direction: forwards;
 
   .projects__title {
     text-align: left;
+
   }
 }
 
