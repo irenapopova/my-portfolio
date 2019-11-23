@@ -87,11 +87,12 @@ a:active {
   position: fixed;
   top: 0;
   left: 0;
-  min-height: 6rem;
+  height: 6rem;
   z-index: 1000;
 }
 
 .header__inner {
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -101,6 +102,7 @@ a:active {
   font-family: 'Patua One', cursive;
   text-shadow: 1px 1px 0.85rem rgba(0, 0, 0, 0.25);
   padding-left: 1rem;
+  font-size: 3rem;
 }
 
 .brand__link:link,
@@ -205,13 +207,71 @@ a:active {
 /** ABOUT SECTION **/
 .about {
   /**background: hsl(215, 29%, 85%); **/
-  background-image: url("./images/bg-image.jpeg"); 
+  background-image: linear-gradient(transparent 50%,#f7f7f7), url("./images/bg-image.jpeg"); 
   min-height: 100vh;
   margin-top: 4rem;
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+@keyframes fadeIn{
+  0% {
+    transform: scale(0) rotateY(200deg) translateY(0);
+  }
+  16.5%{
+    transform: scale(0.17) rotateY(167deg) translateY(-1rem);
+  }
+  33%
+  {
+    transform: scale(0.34) rotateY(134deg) translateY(0);
+  }
+  49.5%{
+    transform: scale(0.9) rotateY(101deg) translateY(-1rem);
+  }
+  66%{
+    transform: scale(0) rotateY(68deg) translateY(0);
+  }
+  82.5%{
+    transform: scale(0.1) rotateY(34deg) translateY(-1rem);
+  }
+  100%{
+    transform: scale(1) rotateY(0) translateY(0);
+  }
+}
+
+@keyframes rotateIn{
+  from {
+transform: scale(0) rotateY(200deg);
+  }
+  to{
+transform: scale(1) rotateY(0deg);
+  }
+}
+@keyframes bounce{
+  0% {
+    transform:  translateY(0);
+  }
+  16.5%{
+    transform:  translateY(-1rem);
+  }
+  33%
+  {
+    transform:  translateY(0);
+  }
+  49.5%{
+    transform:  translateY(-1rem);
+  }
+  66%{
+    transform:  translateY(0);
+  }
+  82.5%{
+    transform:  translateY(-1rem);
+  }
+  100%{
+    transform:  translateY(0);
+  }
 }
 
 .whoami {
@@ -228,6 +288,10 @@ a:active {
 }
 
 .whoami__image-wrapper {
+  animation-name: rotateIn, bounce;
+  animation-duration: 2s, 1s;
+animation-delay: 0s, 2s; 
+animation-direction: forwards;
   border-radius: 30rem;
   
   
@@ -528,7 +592,7 @@ a:active {
 .project-list {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
+  justify-content: space-around;
   padding: 1rem 0;
 }
 
@@ -657,6 +721,7 @@ a:active {
   color: #f7f7f7;
   text-align: center;
   text-shadow: 0 0 0.85rem #000;
+  
 }
 
 .heart {
@@ -704,10 +769,10 @@ a:active {
     flex: 0 0 25%;
   }
 
-  .project-tile {
+  /* .project-tile {
     margin-right: 2rem;
   }
-
+ */
   .project-tile a:hover .project__info,
   .project-tile a:focus .project__info {
     top: 4.8rem;
@@ -801,7 +866,7 @@ a:active {
   }
 
   .project-list {
-    justify-content: flex-start;
+    justify-content: space-around;
   }
 }
 
